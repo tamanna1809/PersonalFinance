@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance</title>
+    <link rel="stylesheet" href="./design.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="heading">
+            <h2>Personal Finance </h2>
+            </div>
+
+            <div>
+                <a href="">Home</a>
+                <a href="">Graph</a>
+                <a href="">Statistics</a>
+                <a href="">Most Spent</a>
+                <a href="">Budget Remaining </a>
+            </div>
+
+            <div class="right">
+            <svg xmlns="http://www.w3.org/2000/svg" height="35" width="35" viewBox="0 0 512 512">!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9c0 .4 0 .7 0 1.1v64c0 26.5 21.5 48 48 48h48V464c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64V464c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48V400c0-.4 0-.7 0-1.1zM96 256a64 64 0 1 1 128 0A64 64 0 1 1 96 256zm256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/albert-einstein-sticks-out-his-tongue-when-asked-by-news-photo-1681316749.jpg">
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="spenditure">
+        <label for="category">Category: </label>
+        <select id="category">
+            <option value="">--choose category--</option>
+            <option value="Food & Beverages">Food & Beverages</option>
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Luxuries">Luxuries</option>
+        </select>
+
+        <label for="Amount">Amount: </label>
+        <input type="number" id="amount">
+
+        <label for="date">Date: </label>
+        <input type="date" id="date">
+
+        <textarea placeholder="Description" id="Description"></textarea>
+
+        <button id="addbtn">Add</button>
+    </div>
+
+
+
+    <div class="expense-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th> Delete</th>
+                </tr>
+            </thead>
+
+            <tbody id="expense-table-body" >
+
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td id="total-amount"> </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+    <canvas id="myChart" width="400px" height="400px"></canvas>
+
+    <script src="script.js"></script>   
+</body>
+</html>

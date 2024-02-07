@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+header nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    background-color: #071641;
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.heading{
+    color:rgb(250, 229, 196);
+    display: inline-block;
+    font-size: 33px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    height: 60px;
+    width: 600px;
+
+
+}
+
+
+header nav div {
+
+    display: flex;
+    gap: 15px;
+    width: 800px;
+    align-items: center;
+    box-sizing: border-box;
+    /* color: white; */
+    /* text-decoration: none; */
+
+
+}
+
+header nav div a {
+    text-decoration: none;
+    font-size: 20px;
+    color: beige;
+}
+
+
+a {
+    color: black;
+}
+
+.right{
+    gap: 20px;
+    padding-left: 630px;
+    box-sizing: border-box;
+    
+}
+
+.right svg{
+    height: 40px;
+    width: 40px;
+    fill: white;
+
+}
+
+.right img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+
+
+.spenditure{
+    height: 150px;
+    width: 100%;
+    background-color: lightsteelblue;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    /* font-size: 30px; */
+    
+
+}
+
+textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    /* color: white; */
+}
+
+label{
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 20px;
+    /* color: white; */
+}
+
+.spenditure button {
+    background-color: lightgray;
+    border-radius: 30px;
+    color: black;
+    font-size: 25px;
+    /* padding: 5px; */
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    /* font-style: italic; */
+    font-weight: bold;
+    /*box-shadow: 10px; */
+}
+
+.expense-table{
+    margin-top: 150px;
+}
+.expense-table button {
+    background-color:red;
+    border-radius: 30px;
+    color: black;
+    font-size: 20px;
+    /* padding: 5px; */
+    text-align: center;
+    height: 30px;
+    width: 80px;
+    font-weight: bold;
+    /*box-shadow: 10px; */
+}
+tfoot td{
+    font-weight: bold;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+th, td{
+    border: 2px solid red;
+    padding: 8px;
+    align-items: left;
+}
+table{
+    width: 100%;
+    border-collapse:collapse ;
+}
+
+.right svg:hover{
+    fill: red;
+}
